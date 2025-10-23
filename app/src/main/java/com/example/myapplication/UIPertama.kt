@@ -1,16 +1,7 @@
 package com.example.myapplication
 
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Text
@@ -24,7 +15,7 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-
+import com.example.questadvancelayout.R
 
 @Composable
 fun AktivitasPertama(modifier: Modifier) {
@@ -42,6 +33,8 @@ fun AktivitasPertama(modifier: Modifier) {
             fontSize = 22.sp
         )
         Spacer(modifier = Modifier.height(25.dp))
+
+        // --- Kartu 1
         Card(
             modifier = Modifier
                 .fillMaxWidth(fraction = 1f)
@@ -50,8 +43,8 @@ fun AktivitasPertama(modifier: Modifier) {
                 containerColor = Color.DarkGray
             )
         ) {
-            Row() {
-                val gambar = painterResource(id = R.drawable.umy)
+            Row {
+                val gambar = painterResource(id = R.drawable.logo)
                 Image(
                     painter = gambar,
                     contentDescription = null,
@@ -73,22 +66,23 @@ fun AktivitasPertama(modifier: Modifier) {
                         fontSize = 20.sp,
                         color = Color.Yellow,
                         modifier = Modifier.padding(top = 10.dp)
-
+                    )
+                    Text(
+                        text = stringResource(id = R.string.NoHp),
+                        fontSize = 20.sp,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 10.dp, bottom = 10.dp)
                     )
                 }
             }
         }
-        Box(
-            modifier = Modifier
-                .fillMaxSize()
-        ) {
-            Text(
-                text = stringResource(id = R.string.copy),
-                modifier = Modifier
-                    .align(Alignment.BottomCenter)
-                    .padding(bottom = 50.dp)
-            )
-        }
 
-    }
-}
+        // --- Kartu 2
+        Card(
+            modifier = Modifier
+                .fillMaxWidth(fraction = 1f)
+                .padding(all = 12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.Blue
+            )
+        )
