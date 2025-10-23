@@ -86,6 +86,7 @@ fun AktivitasPertama(modifier: Modifier) {
                 modifier = Modifier
                     .align(Alignment.BottomCenter)
                     .padding(bottom = 50.dp)
+            )
         }
 
     }
