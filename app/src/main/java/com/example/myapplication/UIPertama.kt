@@ -119,3 +119,13 @@ fun AktivitasPertama(modifier: Modifier) {
                 }
             }
         }
+
+        // --- Kartu 3
+        Card(
+            modifier = Modifier
+                .fillMaxWidth(fraction = 1f)
+                .padding(all = 12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color(0xFF006400) // Hijau tua
+            )
+        ) {
