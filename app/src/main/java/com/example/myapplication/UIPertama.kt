@@ -113,7 +113,8 @@ fun AktivitasPertama(modifier: Modifier) {
                     Text(
                         text = stringResource(id = R.string.NoHp),
                         fontSize = 20.sp,
-
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 10.dp, bottom = 10.dp)
                     )
                 }
             }
