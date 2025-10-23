@@ -99,5 +99,7 @@ fun AktivitasPertama(modifier: Modifier) {
                 Column {
                     Text(
                         text = stringResource(id = R.string.name),
+                        fontSize = 30.sp,
+                        fontFamily = FontFamily.Cursive,
 
                     )
