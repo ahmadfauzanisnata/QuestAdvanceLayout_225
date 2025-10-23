@@ -129,3 +129,12 @@ fun AktivitasPertama(modifier: Modifier) {
                 containerColor = Color(0xFF006400) // Hijau tua
             )
         ) {
+            Row {
+                val gambar = painterResource(id = R.drawable.logo)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier
+                        .size(100.dp)
+                        .padding(all = 5.dp)
+                )
