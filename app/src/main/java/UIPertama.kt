@@ -24,4 +24,7 @@ fun AktivitasPertama(modifier: Modifier) {
             colors = CardDefaults.cardColors(
                 containerColor = Color.DarkGray
             )){
-
+            Row() {
+                val gambar = painterResource(id = R.drawable.umy)
+            }
+        }
